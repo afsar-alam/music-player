@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music player</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="main-container-music">
+        <div class="music-player-container">
+            <p class="playlist-par">M_player</p>
+            <h1 id="title">Arabica</h1>
+            <h1 id="artist">lili</h1>
+              
+               
+               <div class="circle-container">
+
+                <div class="circle-volume">
+                    <div class="sound-wave-container when-music-paused">
+                        <div class="sound-wave sound-wave-1"></div>
+                        <div class="sound-wave sound-wave-2"></div>
+                        <div class="sound-wave sound-wave-3"></div>
+                        <div class="sound-wave sound-wave-4"></div>
+                        <div class="sound-wave sound-wave-5"></div>
+                        <div class="sound-wave sound-wave-6"></div>
+                    </div>
+    
+                 
+                </div>
+                <a class="volume-up"><i class="fa fa-volume-up"></i></a>
+                <audio src="music/1.mp3"></audio>
+             </div>
+             <div class="voluem-container">
+                <button  class="minus-btn" onclick="volumeincrement()">-</button>
+               <div class="songs-no-container"><div class="songs-no">1</div> </div> 
+                <button  class="plus-btn" onclick="volumedecrment()">+</button>
+                
+            </div>
+            <div class="progress-bar-container">
+                <div class="current_time">0:00</div>
+            <div class="seeks">
+                <div class="fill"></div>
+            </div>
+            <div class="duration_time">0:00</div>
+        </div>
+
+            <button class="prev-bnt"><i class="fas fa-backward" title="previous" id="previous"></i></button>
+            <button class="play-bnt"><i class="fas fa-play" title="play" id ="play"></i></button>
+            <button class="next-btn"><i class="fas fa-forward" title="forword" id="forword"></i></button>
+        </div>
+      
+       
+
+
+    </div>
+ <script src="main.js"></script>
+    
+</body>
+</html>
